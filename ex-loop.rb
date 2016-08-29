@@ -2,11 +2,6 @@
 1. What does the each method in the following program
 return after it is finished executing?
 
-x = [1, 2, 3, 4, 5]
-x.each do |a|
-  puts a + 1
-end
-
 It supposed to be display a series of numbers adding 1
 on each item but since puts method was not place it doesnt output 
 anything
@@ -14,13 +9,17 @@ anything
 =end
 
 
+x = [1, 2, 3, 4, 5]
+x.each do |a|
+  puts a + 1
+end
+
 =begin
 2. Write a while loop that takes input from the 
 user, performs an action, and only stops when
 the user types "STOP". Each loop can get info from the user.
 =end
 
-=begin
 msg=""
 while msg != "STOP" do
 	print "Enter your message: "
@@ -32,7 +31,6 @@ until msg == "STOP" do
 	print "Enter your message: "
 	msg = gets.chomp
 end
-=end
 
 
 =begin
